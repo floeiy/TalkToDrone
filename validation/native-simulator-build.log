@@ -1,0 +1,5 @@
+Full local build output: /tmp/t2d-native-simulator-build.log
+See README.md for the build command.
+
+2026-11-03 16:13:15.144 appintentsmetadataprocessor[45078:3877091] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+** BUILD SUCCEEDED **

@@ -1,0 +1,14 @@
+[webrtc] video session stopped
+[webrtc] starting video session at http://127.0.0.1:18080
+[webrtc] source: Synthetic test source: idle
+[webrtc] connection state: 1
+[webrtc] connection state: 2
+[webrtc] first decoded video frame
+[webrtc] source: Synthetic test source: live
+[webrtc] attempt 1 failed: Could not connect to the server.
+[webrtc] source: Synthetic test source: idle
+[webrtc] connection state: 1
+[webrtc] connection state: 2
+[webrtc] first decoded video frame
+[webrtc] source: Synthetic test source: live
+com.floeiy.TalkToDrone: 44860

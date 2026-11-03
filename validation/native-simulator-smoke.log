@@ -1,0 +1,39 @@
+[native-smoke] START http://10.42.0.2:8080
+[webrtc] video session stopped
+[webrtc] starting video session at http://10.42.0.2:8080
+[webrtc] source: Synthetic test source: idle
+[webrtc] connection state: 1
+[webrtc] connection state: 2
+[webrtc] first decoded video frame
+[webrtc] source: Synthetic test source: live
+[native-smoke] PASS first connection: 31 rendered frames; Synthetic test source: live
+[webrtc] video session stopped
+[native-smoke] PASS stop and cleanup
+[webrtc] video session stopped
+[webrtc] starting video session at http://10.42.0.2:8080
+[webrtc] source: Synthetic test source: idle
+[webrtc] connection state: 1
+[webrtc] connection state: 2
+[webrtc] first decoded video frame
+[webrtc] source: Synthetic test source: live
+[native-smoke] PASS reconnect: 32 rendered frames
+[webrtc] video session stopped
+[webrtc] starting video session at http://10.42.0.2:9
+[webrtc] attempt 1 failed: Could not connect to the server.
+[webrtc] attempt 2 failed: Could not connect to the server.
+[webrtc] attempt 3 failed: Could not connect to the server.
+[webrtc] attempt 4 failed: Could not connect to the server.
+[native-smoke] PASS unavailable server stops retrying: Stopped after 3 retries. Could not connect to the server. Tap Retry.
+[webrtc] video session stopped
+[webrtc] starting video session at http://10.42.0.2:8080
+[webrtc] video session stopped
+[native-smoke] PASS cancellation of queued connection
+[webrtc] video session stopped
+[webrtc] starting video session at http://10.42.0.2:8080
+[webrtc] source: Synthetic test source: idle
+[webrtc] connection state: 1
+[webrtc] connection state: 2
+[webrtc] first decoded video frame
+[webrtc] source: Synthetic test source: live
+[native-smoke] PASS recovery: 36 rendered frames
+[native-smoke] COMPLETE — video remains connected

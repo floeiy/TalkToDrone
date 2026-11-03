@@ -1,0 +1,71 @@
+No cameras available!
+[0:42:05.154092537] [5707]  INFO Camera camera_manager.cpp:340 libcamera v0.7.0
+Available cameras:
+15:# other dtoverlay= specification
+32:dtoverlay=vc4-kms-v3d
+35:# Autoload overlays for any recognized cameras or displays that are attached
+36:# to the CSI/DSI ports. Please note this is for libcamera support, *not* for
+37:# the legacy camera stack
+38:camera_auto_detect=0
+42:dtoverlay=dwc2
+52:dtoverlay=vc4-kms-v3d,cma-128
+57:dtoverlay=vc4-kms-v3d,cma-128
+62:dtoverlay=dwc2,dr_mode=host
+65:dtoverlay=imx708
+Jul 27 22:44:06 prs kernel: dw9807 11-000c: I2C write CTL fail ret = -121
+Jul 27 22:44:06 prs kernel: imx708 11-001a: failed to read chip id 708, with error -5
+Jul 27 22:44:06 prs kernel: dw9807 11-000c: I2C write STATUS address fail ret = -121
+Jul 27 22:44:06 prs kernel: dw9807 11-000c: dw9807_ramp I2C failure: -121
+Jul 27 22:44:06 prs kernel: dw9807 11-000c: I2C write STATUS address fail ret = -121
+Jul 27 22:44:06 prs kernel: dw9807 11-000c: dw9807_ramp I2C failure: -121
+Jul 27 22:44:06 prs kernel: dw9807 11-000c: I2C write CTL fail ret = -121
+Jul 27 22:44:06 prs kernel: imx708 11-001a: probe with driver imx708 failed with error -5
+total 0
+--w------- 1 root root 4096 Jul 27 23:25 bind
+lrwxrwxrwx 1 root root    0 Jul 27 23:25 module -> ../../../../module/imx708
+--w------- 1 root root 4096 Jul 27 23:25 uevent
+--w------- 1 root root 4096 Jul 27 23:25 unbind
+# file: dev/media0
+# owner: root
+# group: video
+user::rw-
+user:prs:rw-
+group::rw-
+mask::rw-
+other::---
+
+ V....D libx264              libx264 H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10 (codec h264)
+ V....D libx264rgb           libx264 H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10 RGB (codec h264)
+Name:   imx708
+Info:   Sony IMX708 camera module.
+        Uses Unicam 1, which is the standard camera connector on most Pi
+        variants.
+Load:   dtoverlay=imx708,<param>=<val>
+Params: rotation                Mounting rotation of the camera sensor (0 or
+                                180, default 180)
+        orientation             Sensor orientation (0 = front, 1 = rear,
+                                2 = external, default external)
+        vcm                     Select lens driver state. Default is enabled,
+                                but vcm=off will disable.
+        media-controller        Configure use of Media Controller API for
+                                configuring the sensor (default on)
+        cam0                    Adopt the default configuration for CAM0 on a
+                                Compute Module (CSI0, i2c_vc, and cam0_reg).
+        link-frequency          Allowable link frequency values to use in Hz:
+                                450000000 (default), 447000000, 453000000.
+
+
+Name:   interludeaudio-analog
+	__fixups__ {
+		i2c0if = "/fragment@0:target:0";
+		cam1_clk = "/fragment@1:target:0", "/fragment@100/__overlay__/imx708@1a:clocks:0";
+		i2c0mux = "/fragment@2:target:0";
+		cam1_reg = "/fragment@3:target:0", "/fragment@100/__overlay__/imx708@1a:vana1-supply:0", "/fragment@100/__overlay__/dw9817@c:VDD-supply:0";
+		i2c_csi_dsi = "/fragment@100:target:0";
+		cam_dummy_reg = "/fragment@100/__overlay__/imx708@1a:vana2-supply:0", "/fragment@100/__overlay__/imx708@1a:vdig-supply:0", "/fragment@100/__overlay__/imx708@1a:vddl-supply:0";
+		csi1 = "/fragment@101:target:0", "/fragment@102:target:0";
+		i2c_csi_dsi0 = "/__overrides__:cam0:14";
+		csi0 = "/__overrides__:cam0:32";
+		cam0_clk = "/__overrides__:cam0:50", "/__overrides__:cam0:86";
+		cam0_reg = "/__overrides__:cam0:68", "/__overrides__:cam0:110", "/__overrides__:cam0:132";
+	};

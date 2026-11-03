@@ -1,0 +1,5 @@
+Full local build output: /tmp/t2d-native-device-build.log
+See README.md for the build command.
+
+2026-11-03 16:13:11.767 appintentsmetadataprocessor[45034:3876758] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+** BUILD SUCCEEDED **

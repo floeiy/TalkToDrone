@@ -1,0 +1,5 @@
+2026-11-03 Europe/Berlin
+SHA-256 comparison passed for all 53 native snapshot files.
+Source: /Users/prs/PRS/EICHINGER/TalkToDrone
+Destination: prs@10.42.0.1:/home/prs/PROJECTS/Talk2Drone/native-mac
+Excluded xcuserdata, .swiftpm, .DS_Store; no credentials, .git, venv or app binary copied.

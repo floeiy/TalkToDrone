@@ -1,0 +1,35 @@
+T2DHotspot:802-11-wireless:wlan0
+lo:loopback:lo
+br-8e560768bd78:bridge:br-8e560768bd78
+docker0:bridge:docker0
+yes
+shared
+wlan0            UP             10.42.0.1/24 
+enabled
+enabled
+graphical.target
+State  Recv-Q Send-Q Local Address:Port Peer Address:Port
+LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*   
+LISTEN 0      4096         0.0.0.0:22        0.0.0.0:*   
+LISTEN 0      4096       127.0.0.1:631       0.0.0.0:*   
+LISTEN 0      32         10.42.0.1:53        0.0.0.0:*   
+LISTEN 0      4096      127.0.0.54:53        0.0.0.0:*   
+LISTEN 0      4096           [::1]:631          [::]:*   
+LISTEN 0      4096            [::]:22           [::]:*   
+/sys/class/video4linux/video19/name: rpi-hevc-dec
+/sys/class/video4linux/video20/name: pispbe-input
+/sys/class/video4linux/video21/name: pispbe-tdn_input
+/sys/class/video4linux/video22/name: pispbe-stitch_input
+/sys/class/video4linux/video23/name: pispbe-output0
+/sys/class/video4linux/video24/name: pispbe-output1
+/sys/class/video4linux/video25/name: pispbe-tdn_output
+/sys/class/video4linux/video26/name: pispbe-stitch_output
+/sys/class/video4linux/video27/name: pispbe-config
+/sys/class/video4linux/video28/name: pispbe-input
+/sys/class/video4linux/video29/name: pispbe-tdn_input
+/sys/class/video4linux/video30/name: pispbe-stitch_input
+/sys/class/video4linux/video31/name: pispbe-output0
+/sys/class/video4linux/video32/name: pispbe-output1
+/sys/class/video4linux/video33/name: pispbe-tdn_output
+/sys/class/video4linux/video34/name: pispbe-stitch_output
+/sys/class/video4linux/video35/name: pispbe-config

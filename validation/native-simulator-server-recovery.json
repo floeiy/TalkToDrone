@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-03",
+  "platform": "visionOS 27.0 simulator",
+  "runtime": "http://127.0.0.1:18080",
+  "source": "explicit synthetic test input",
+  "scenario": "running backend process stopped and restarted; not camera-source-only interruption",
+  "events": [
+    {
+      "event": "backend_started",
+      "seconds": 0.233,
+      "pid": 44848
+    },
+    {
+      "event": "initial_native_decoded_frame",
+      "seconds": 2.14,
+      "health": {
+        "status": "ok",
+        "role": "laptop",
+        "peers": 1,
+        "source": {
+          "kind": "synthetic",
+          "state": "live",
+          "frame_age_s": 0.019,
+          "frames_received": 6,
+          "error": null
+        }
+      }
+    },
+    {
+      "event": "backend_stopped",
+      "seconds": 2.185,
+      "exit_code": 0
+    },
+    {
+      "event": "native_detected_service_loss",
+      "seconds": 6.213,
+      "message": "[webrtc] attempt 1 failed: Could not connect to the server."
+    },
+    {
+      "event": "backend_started",
+      "seconds": 6.432,
+      "pid": 44863
+    },
+    {
+      "event": "native_decoded_frame_after_restart",
+      "seconds": 8.452,
+      "health": {
+        "status": "ok",
+        "role": "laptop",
+        "peers": 1,
+        "source": {
+          "kind": "synthetic",
+          "state": "live",
+          "frame_age_s": 0.005,
+          "frames_received": 5,
+          "error": null
+        }
+      }
+    },
+    {
+      "event": "backend_stopped",
+      "seconds": 9.413,
+      "exit_code": 0
+    },
+    {
+      "event": "cleanup_completed",
+      "seconds": 9.413,
+      "app_terminated": true,
+      "backend_stopped": true,
+      "endpoint_override": "launch argument only; no persistent defaults write"
+    }
+  ],
+  "status": "passed"
+}

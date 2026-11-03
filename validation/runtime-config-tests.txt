@@ -1,0 +1,7 @@
+PASS defaults: laptop video endpoint, speech disabled
+PASS valid configuration: HTTPS, normalized base path, independent speech URL
+PASS settings restored from preferences
+PASS invalid video URLs rejected without changing active settings (10 cases)
+PASS invalid speech URLs rejected atomically; persisted settings unchanged (9 cases)
+PASS clearing speech disables forwarding persistently
+RuntimeConfig checks passed.

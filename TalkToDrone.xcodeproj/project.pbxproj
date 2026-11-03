@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6510B21E304EB07300DD4BBE /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 6510B21D304EB07300DD4BBE /* RealityKitContent */; };
+		6510B24E304F16EB00DD4BBE /* LiveKitWebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 6510B24D304F16EB00DD4BBE /* LiveKitWebRTC */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6510B24E304F16EB00DD4BBE /* LiveKitWebRTC in Frameworks */,
 				6510B21E304EB07300DD4BBE /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +96,7 @@
 			name = TalkToDrone;
 			packageProductDependencies = (
 				6510B21D304EB07300DD4BBE /* RealityKitContent */,
+				6510B24D304F16EB00DD4BBE /* LiveKitWebRTC */,
 			);
 			productName = TalkToDrone;
 			productReference = 6510B218304EB07300DD4BBE /* TalkToDrone.app */;
@@ -123,6 +126,9 @@
 			);
 			mainGroup = 6510B20F304EB07300DD4BBE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6510B24C304F16EB00DD4BBE /* XCRemoteSwiftPackageReference "webrtc-xcframework" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6510B219304EB07300DD4BBE /* Products */;
 			projectDirPath = "";
@@ -165,6 +171,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "TalkToDrone connects to the laptop on T2D Wi-Fi to receive live video and optionally send speech transcripts";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "TalkToDrone uses the microphone for speech input";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "TalkToDrone uses speech recognition to transcribe spoken input";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -194,6 +203,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "TalkToDrone connects to the laptop on T2D Wi-Fi to receive live video and optionally send speech transcripts";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "TalkToDrone uses the microphone for speech input";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "TalkToDrone uses speech recognition to transcribe spoken input";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,10 +368,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		6510B24C304F16EB00DD4BBE /* XCRemoteSwiftPackageReference "webrtc-xcframework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/livekit/webrtc-xcframework.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 144.7559.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		6510B21D304EB07300DD4BBE /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;
+		};
+		6510B24D304F16EB00DD4BBE /* LiveKitWebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6510B24C304F16EB00DD4BBE /* XCRemoteSwiftPackageReference "webrtc-xcframework" */;
+			productName = LiveKitWebRTC;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -1,0 +1,26 @@
+# macOS and per-user Xcode state
+.DS_Store
+xcuserdata/
+*.xcuserstate
+.swiftpm/
+
+# Build products and local environments
+.build/
+DerivedData/
+build/
+*.app/
+*.ipa
+*.dSYM/
+*.xcarchive/
+.venv/
+.bootstrap/
+.python/
+__pycache__/
+
+# Local credentials and exports
+.env
+.env.*
+!.env.example
+*.p12
+*.mobileprovision
+/TalkToDrone.zip

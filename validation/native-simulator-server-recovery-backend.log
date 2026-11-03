@@ -1,0 +1,62 @@
+2026-11-03 16:11:30,663 INFO t2d.server: Laptop video service starting: bind=127.0.0.1:18080 input=synthetic size=640x480 fps=30 max_viewers=4
+2026-11-03 16:11:30,663 WARNING t2d.server: Explicit SYNTHETIC TEST video selected; this is not a drone camera
+======== Running on http://127.0.0.1:18080 ========
+(Press CTRL+C to quit)
+2026-11-03 16:11:30,732 INFO aiohttp.access: 127.0.0.1 [03/Nov/2026:16:11:30 +0100] "GET /health HTTP/1.1" 200 333 "-" "Python-urllib/3.12"
+2026-11-03 16:11:32,296 INFO aiohttp.access: 127.0.0.1 [03/Nov/2026:16:11:32 +0100] "GET /health HTTP/1.1" 200 314 "-" "TalkToDrone/1 CFNetwork/3896.100.1.5.1 Darwin/25.6.0"
+2026-11-03 16:11:32,449 INFO t2d.server: Viewer offer accepted (1 active)
+2026-11-03 16:11:32,451 INFO t2d.video: Opening synthetic video input
+2026-11-03 16:11:32,452 INFO t2d.video: Video input live (640x480)
+2026-11-03 16:11:32,454 INFO aiohttp.access: 127.0.0.1 [03/Nov/2026:16:11:32 +0100] "POST /offer HTTP/1.1" 200 2077 "-" "TalkToDrone/1 CFNetwork/3896.100.1.5.1 Darwin/25.6.0"
+2026-11-03 16:11:32,454 INFO aioice.ice: Connection(0) Check CandidatePair(('10.42.0.56', 51889) -> ('10.42.0.56', 55921)) State.FROZEN -> State.WAITING
+2026-11-03 16:11:32,454 INFO aioice.ice: Connection(0) Check CandidatePair(('10.152.57.13', 52190) -> ('10.42.0.56', 55921)) State.FROZEN -> State.WAITING
+2026-11-03 16:11:32,454 INFO aioice.ice: Connection(0) Check CandidatePair(('10.42.0.56', 51889) -> ('10.152.57.13', 56086)) State.FROZEN -> State.WAITING
+2026-11-03 16:11:32,454 INFO aioice.ice: Connection(0) Check CandidatePair(('fdcc:a3aa:c2c6::2', 61341) -> ('fdcc:a3aa:c2c6::2', 58936)) State.FROZEN -> State.WAITING
+2026-11-03 16:11:32,454 INFO t2d.server: Viewer connection state: connecting
+2026-11-03 16:11:32,454 INFO aioice.ice: Connection(0) Check CandidatePair(('10.42.0.56', 51889) -> ('10.42.0.56', 55921)) State.WAITING -> State.IN_PROGRESS
+2026-11-03 16:11:32,455 INFO aioice.ice: Connection(0) Check CandidatePair(('10.42.0.56', 51889) -> ('10.42.0.56', 55921)) State.IN_PROGRESS -> State.SUCCEEDED
+2026-11-03 16:11:32,455 INFO aioice.ice: Connection(0) Check CandidatePair(('10.152.57.13', 52190) -> ('10.42.0.56', 55921)) State.WAITING -> removed
+2026-11-03 16:11:32,455 INFO aioice.ice: Connection(0) Check CandidatePair(('10.42.0.56', 51889) -> ('10.152.57.13', 56086)) State.WAITING -> removed
+2026-11-03 16:11:32,455 INFO aioice.ice: Connection(0) Check CandidatePair(('10.152.57.13', 52190) -> ('10.152.57.13', 56086)) State.FROZEN -> removed
+2026-11-03 16:11:32,455 INFO aioice.ice: Connection(0) Check CandidatePair(('fdcc:a3aa:c2c6::2', 61341) -> ('fdcc:a3aa:c2c6::2', 58936)) State.WAITING -> removed
+2026-11-03 16:11:32,455 INFO aioice.ice: Connection(0) ICE completed
+2026-11-03 16:11:32,485 INFO t2d.server: Viewer connection state: connected
+2026-11-03 16:11:32,557 INFO aiohttp.access: 127.0.0.1 [03/Nov/2026:16:11:32 +0100] "GET /health HTTP/1.1" 200 315 "-" "TalkToDrone/1 CFNetwork/3896.100.1.5.1 Darwin/25.6.0"
+2026-11-03 16:11:32,639 INFO aiohttp.access: 127.0.0.1 [03/Nov/2026:16:11:32 +0100] "GET /health HTTP/1.1" 200 334 "-" "Python-urllib/3.12"
+2026-11-03 16:11:32,640 INFO t2d.server: Laptop video service shutting down
+2026-11-03 16:11:32,646 INFO t2d.server: Viewer connection state: closed
+2026-11-03 16:11:32,646 INFO t2d.server: Viewer released (0 active)
+2026-11-03 16:11:32,646 INFO t2d.video: Video input released
+2026-11-03 16:11:32,646 INFO t2d.video: Video input released
+2026-11-03 16:11:36,890 INFO t2d.server: Laptop video service starting: bind=127.0.0.1:18080 input=synthetic size=640x480 fps=30 max_viewers=4
+2026-11-03 16:11:36,890 WARNING t2d.server: Explicit SYNTHETIC TEST video selected; this is not a drone camera
+======== Running on http://127.0.0.1:18080 ========
+(Press CTRL+C to quit)
+2026-11-03 16:11:36,932 INFO aiohttp.access: 127.0.0.1 [03/Nov/2026:16:11:36 +0100] "GET /health HTTP/1.1" 200 333 "-" "Python-urllib/3.12"
+2026-11-03 16:11:38,680 INFO aiohttp.access: 127.0.0.1 [03/Nov/2026:16:11:38 +0100] "GET /health HTTP/1.1" 200 314 "-" "TalkToDrone/1 CFNetwork/3896.100.1.5.1 Darwin/25.6.0"
+2026-11-03 16:11:38,808 INFO t2d.server: Viewer offer accepted (1 active)
+2026-11-03 16:11:38,811 INFO t2d.video: Opening synthetic video input
+2026-11-03 16:11:38,812 INFO t2d.video: Video input live (640x480)
+2026-11-03 16:11:38,815 INFO aiohttp.access: 127.0.0.1 [03/Nov/2026:16:11:38 +0100] "POST /offer HTTP/1.1" 200 2077 "-" "TalkToDrone/1 CFNetwork/3896.100.1.5.1 Darwin/25.6.0"
+2026-11-03 16:11:38,815 INFO aioice.ice: Connection(0) Check CandidatePair(('10.42.0.56', 59702) -> ('10.42.0.56', 62850)) State.FROZEN -> State.WAITING
+2026-11-03 16:11:38,815 INFO aioice.ice: Connection(0) Check CandidatePair(('10.152.57.13', 58432) -> ('10.42.0.56', 62850)) State.FROZEN -> State.WAITING
+2026-11-03 16:11:38,815 INFO aioice.ice: Connection(0) Check CandidatePair(('10.42.0.56', 59702) -> ('10.152.57.13', 55458)) State.FROZEN -> State.WAITING
+2026-11-03 16:11:38,815 INFO aioice.ice: Connection(0) Check CandidatePair(('fdcc:a3aa:c2c6::2', 56263) -> ('fdcc:a3aa:c2c6::2', 53936)) State.FROZEN -> State.WAITING
+2026-11-03 16:11:38,816 INFO t2d.server: Viewer connection state: connecting
+2026-11-03 16:11:38,816 INFO aioice.ice: Connection(0) Check CandidatePair(('10.42.0.56', 59702) -> ('10.42.0.56', 62850)) State.WAITING -> State.IN_PROGRESS
+2026-11-03 16:11:38,817 INFO aioice.ice: Connection(0) Check CandidatePair(('10.42.0.56', 59702) -> ('10.42.0.56', 62850)) State.IN_PROGRESS -> State.SUCCEEDED
+2026-11-03 16:11:38,817 INFO aioice.ice: Connection(0) Check CandidatePair(('10.152.57.13', 58432) -> ('10.42.0.56', 62850)) State.WAITING -> removed
+2026-11-03 16:11:38,817 INFO aioice.ice: Connection(0) Check CandidatePair(('10.42.0.56', 59702) -> ('10.152.57.13', 55458)) State.WAITING -> removed
+2026-11-03 16:11:38,817 INFO aioice.ice: Connection(0) Check CandidatePair(('10.152.57.13', 58432) -> ('10.152.57.13', 55458)) State.FROZEN -> removed
+2026-11-03 16:11:38,817 INFO aioice.ice: Connection(0) Check CandidatePair(('fdcc:a3aa:c2c6::2', 56263) -> ('fdcc:a3aa:c2c6::2', 53936)) State.WAITING -> removed
+2026-11-03 16:11:38,817 INFO aioice.ice: Connection(0) ICE completed
+2026-11-03 16:11:38,846 INFO t2d.server: Viewer connection state: connected
+2026-11-03 16:11:38,935 INFO aiohttp.access: 127.0.0.1 [03/Nov/2026:16:11:38 +0100] "GET /health HTTP/1.1" 200 314 "-" "TalkToDrone/1 CFNetwork/3896.100.1.5.1 Darwin/25.6.0"
+2026-11-03 16:11:38,951 INFO aiohttp.access: 127.0.0.1 [03/Nov/2026:16:11:38 +0100] "GET /health HTTP/1.1" 200 334 "-" "Python-urllib/3.12"
+2026-11-03 16:11:39,014 INFO aioice.ice: Connection(0) Check CandidatePair(('10.152.57.13', 58432) -> ('10.152.57.13', 55458)) State.WAITING -> State.IN_PROGRESS
+2026-11-03 16:11:39,015 INFO aioice.ice: Connection(0) Check CandidatePair(('10.152.57.13', 58432) -> ('10.152.57.13', 55458)) State.IN_PROGRESS -> State.SUCCEEDED
+2026-11-03 16:11:39,870 INFO t2d.server: Laptop video service shutting down
+2026-11-03 16:11:39,871 INFO t2d.server: Viewer connection state: closed
+2026-11-03 16:11:39,871 INFO t2d.server: Viewer released (0 active)
+2026-11-03 16:11:39,871 INFO t2d.video: Video input released
+2026-11-03 16:11:39,871 INFO t2d.video: Video input released
