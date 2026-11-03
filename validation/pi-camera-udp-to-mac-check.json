@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "path": "Pi IMX708 -> H264 MPEG-TS UDP -> Mac diagnostic decoder (Ubuntu runtime unchanged)",
+  "frames": 45,
+  "width": 640,
+  "height": 480,
+  "first_frame_s": 2.585,
+  "media_duration_s": 2.933,
+  "health": {
+    "kind": "network",
+    "state": "live",
+    "frame_age_s": 0.0,
+    "frames_received": 45,
+    "error": null
+  },
+  "sender_exit_code": 0
+}

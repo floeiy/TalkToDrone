@@ -1,8 +1,10 @@
 # TalkToDrone — native Vision Pro client
 
 Read [AGENTS.md](AGENTS.md) for the laptop-centric architecture and
-[the Mac continuation record](docs/mac-continuation-2026-11-03.md) for verified
-results and outstanding hardware work.
+[the hardware handover](docs/hardware-validation-2026-11-03.md) for the current
+setup, startup commands, verified results and remaining checks. The earlier
+[Mac continuation record](docs/mac-continuation-2026-11-03.md) preserves the
+implementation and simulator validation history.
 
 The Raspberry Pi provides the `T2D` network at `10.42.0.1`. The existing Linux
 video runtime is `http://10.42.0.2:8080`. The Mac currently has DHCP address
@@ -22,9 +24,11 @@ The client posts a video-only, fully gathered ICE offer to `/offer` and reads
 `/health`. No external STUN/TURN service or Internet connection is needed for
 LAN video. HTTP signaling uses port 8080; media uses negotiated UDP ports.
 
-The current Linux source is explicitly synthetic unless its configuration is
-changed. Source status and received-frame status are shown separately. A
-successful HTTP health check or a received track alone does not prove live video.
+Real-camera playback on the physical Vision Pro was confirmed by the wearer on
+2026-11-03. The IMX708 camera on the Pi sends H.264/MPEG-TS over UDP 5600 to
+Ubuntu, which forwards video over WebRTC. Both source and runtime currently use
+transient user services; see the hardware handover to recreate them after a
+restart. Source status and received-frame status are shown separately.
 
 Speech transcription remains available. Forwarding is disabled by default;
 an optional, separate laptop speech endpoint can be configured. The video

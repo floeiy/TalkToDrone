@@ -1,0 +1,25 @@
+[native-smoke] START http://10.42.0.2:8080
+[webrtc] video session stopped
+[webrtc] starting video session at http://10.42.0.2:8080
+[webrtc] source: Camera source (network): live
+[webrtc] connection state: 1
+[webrtc] connection state: 2
+[webrtc] first decoded video frame
+[native-smoke] PASS first connection: 31 rendered frames; Camera source (network): live
+[webrtc] video session stopped
+[native-smoke] PASS stop and cleanup
+[webrtc] video session stopped
+[webrtc] starting video session at http://10.42.0.2:8080
+[webrtc] source: Camera source (network): live
+[webrtc] connection state: 1
+[webrtc] connection state: 2
+[webrtc] first decoded video frame
+[native-smoke] FAIL Timed out waiting for video state; Connected to laptop; Receiving video
+[webrtc] video session stopped
+[webrtc] video session stopped
+[webrtc] starting video session at http://10.42.0.2:8080
+[webrtc] source: Camera source (network): idle
+[webrtc] connection state: 1
+[webrtc] connection state: 2
+[webrtc] first decoded video frame
+[webrtc] source: Camera source (network): live

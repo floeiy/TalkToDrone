@@ -1,5 +1,11 @@
 # Mac continuation — 2026-11-03, Europe/Berlin
 
+**Historical record, before the hardware test.** Camera detection, Ubuntu SSH
+access and physical-headset playback were subsequently established. The wearer
+confirmed seeing the real image. See [the current hardware handover](hardware-validation-2026-11-03.md)
+for active services, evidence and remaining validation; the blockers below
+describe the earlier state.
+
 The native client integration is implemented and builds for both physical
 visionOS and the simulator. Synthetic streaming from the existing Ubuntu
 runtime has been verified in the native simulator. **The first milestone is

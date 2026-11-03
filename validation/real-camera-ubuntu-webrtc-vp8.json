@@ -1,0 +1,28 @@
+{
+  "status": "ok",
+  "url": "http://10.42.0.2:8080",
+  "codec": "VP8",
+  "decoded_frames": 60,
+  "dimensions": [
+    [
+      640,
+      480
+    ]
+  ],
+  "elapsed_seconds": 4.111,
+  "first_frame_seconds": 0.177,
+  "media_duration_seconds": 3.933,
+  "connection_state": "connected",
+  "health": {
+    "status": "ok",
+    "role": "laptop",
+    "peers": 2,
+    "source": {
+      "kind": "network",
+      "state": "live",
+      "frame_age_s": 0.009,
+      "frames_received": 361,
+      "error": null
+    }
+  }
+}
